@@ -13,7 +13,7 @@ function lightMode(){
 }
 
 function goToMainPage(){
-    window.open("mainPage.html", "_blank");
+    window.open("index.html", "_blank");
 }
 
 
