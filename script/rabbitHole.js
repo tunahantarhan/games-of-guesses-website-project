@@ -1,3 +1,3 @@
 function goBackToSimulation(){
-    location.href = "../feelingLuckyPage.html";
+    location.href = "feelingLuckyPage.html";
 }
