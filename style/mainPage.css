@@ -1,0 +1,59 @@
+#mainSectionDiv{
+    text-align: center;
+    width: 100%;
+    font-size: 3.5vw;
+    padding-top: 1.5vw;
+}
+
+#mainSectionDiv #siteNameMainSection{
+    font-size: 6vw;
+    font-family: "Eight Bit Dragon", monospace;
+    animation: blinkingAnimation 3s linear infinite;
+    margin-top: -2vw;
+    margin-bottom: 2vw;
+}
+
+#mainSectionDiv #underText{
+    font-size: 1.5vw;
+}
+
+#mainSectionDiv #mainPageButtonsDiv{
+    display: flex;
+    justify-content: center;
+    margin-top: 2.5vw;
+}
+
+#mainSectionDiv #mainPageButtonsDiv button{
+    display: inline-block;
+    cursor: pointer;
+    font-family: "Eight Bit Dragon", monospace;
+    font-size: 1vw;
+    margin: 1.2vw;
+    margin-bottom: 2vw;
+    padding: 1vw;
+    border-color: #6ff17b;
+    border-radius: 1vw;
+    color: white;
+    background-color: #3fae47;
+    transition: color 0.6s ease, box-shadow 0.5s ease;
+    animation: buttonBlinking 3s linear infinite;
+    box-shadow: 0 12px 20px 0 lightgreen;
+}
+
+#mainSectionDiv #mainPageButtonsDiv button:hover{
+    animation: none;
+    background-color: white;
+    color: #27282c;
+    box-shadow: 0 12px 30px 0 rgba(0, 255, 57, 0.71),0 17px 50px 0 rgba(0, 255, 57, 0.71);
+}
+
+@keyframes blinkingAnimation {
+    50%{opacity: 0}
+    /* animasyon, süresinin yarısını (50%) opacity'yi fullden 0'a çekmekle,
+       diğer yarısını da 0'dan fulle geri çekmekle geçirecek
+       bu durum bize yanıp sönüyormuş gibi bir görüntü verecek */
+}
+
+@keyframes buttonBlinking {
+    50%{background-color: darkgreen}
+}

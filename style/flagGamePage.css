@@ -1,0 +1,155 @@
+#mainSectionDiv{
+    margin-top: 10vw;
+    margin-bottom: 10vw;
+    text-align: center;
+}
+
+#mainSectionDiv #gameName_Flag{
+    font-size: 4vw;
+    font-family: "Eight Bit Dragon", monospace;
+}
+
+#mainSectionDiv #introductionText_Flag{
+    font-size: 1.5vw;
+}
+
+#mainSectionDiv #goodLuckText_Flag{
+    font-size: 1vw;
+}
+
+#mainSectionDiv #startGameButton_Flag{
+    cursor: pointer;
+    font-family: "Eight Bit Dragon", monospace;
+    font-size: 2vw;
+    margin-top: 4vw;
+    padding: 1vw;
+    border-color: #6ff17b;
+    border-radius: 1vw;
+    color: white;
+    background-color: #3fae47;
+    transition: color 0.6s ease, box-shadow 0.4s ease;
+    box-shadow: 0 12px 30px 0 lightgreen;
+    animation: buttonBlinking 1.5s linear infinite;
+}
+
+#mainSectionDiv #startGameButton_Flag:hover{
+    animation: none;
+    background-color: white;
+    color: #27282c;
+    box-shadow: 0 12px 30px 0 rgba(0, 255, 57, 0.71),0 17px 50px 0 rgba(0, 255, 57, 0.71);
+}
+
+/** game screen : **/
+
+#mainSectionDiv #gameAreaDiv_Flag{
+    display: none;
+    width: 50%;
+    background-color: #345137;
+    border-radius: 10%;
+    margin: -2.5vw 25% -2.5vw 25%;  /*top-right-bottom-left*/
+    padding: 0.2vw;
+}
+
+#mainSectionDiv #gameAreaDiv_Flag #questionNumberAndTimeBar_Flag{
+    display: flex;
+    font-family: "Eight Bit Dragon", monospace;
+    color: #91f19a;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1vw;
+    margin-bottom: 3vw;
+}
+
+#mainSectionDiv #gameAreaDiv_Flag #questionNumberAndTimeBar_Flag #questionNumber_Flag{
+    display: inline-block;
+    font-size: 1.5vw;
+    margin-left: 2vw;
+}
+
+#mainSectionDiv #gameAreaDiv_Flag #questionNumberAndTimeBar_Flag #gameTime_Flag{
+    display: inline-block;
+    font-size: 1.5vw;
+    margin-right: 2vw;
+}
+
+#mainSectionDiv #gameAreaDiv_Flag #countryFlag{
+    display: block;
+    font-size: 10vw;
+    margin-top: -3vw;
+    margin-bottom: 1vw;
+}
+
+#mainSectionDiv #gameAreaDiv_Flag #userInputPlaceDiv_Flag{
+    display: inline-block;
+}
+#mainSectionDiv #gameAreaDiv_Flag #userAnswer_Flag{
+    height: 2vw;
+    font-family: "Eight Bit Dragon", monospace;
+    margin-left: 1vw;
+}
+
+#mainSectionDiv #gameAreaDiv_Flag #gameButtonsDiv_Flag{
+    display: block;
+    margin-top: 1vw;
+    margin-bottom: 1.5vw;
+}
+
+#mainSectionDiv #gameAreaDiv_Flag #gameButtonsDiv_Flag button{
+    cursor: pointer;
+    font-family: "Eight Bit Dragon", monospace;
+    font-size: 1vw;
+    margin-top: 2vw;
+    padding: 0.5vw;
+    border-color: #6ff17b;
+    border-radius: 0.5vw;
+    color: white;
+    background-color: #3fae47;
+    transition: background-color 0.6s ease, color 0.6s ease, box-shadow 0.4s ease;
+    box-shadow: 0 12px 30px 0 lightgreen;
+}
+
+#mainSectionDiv #gameAreaDiv_Flag #gameButtonsDiv_Flag button:hover{
+    background-color: white;
+    color: #27282c;
+    box-shadow: 0 12px 30px 0 rgba(0, 255, 57, 0.71),0 17px 50px 0 rgba(0, 255, 57, 0.71);
+}
+
+#mainSectionDiv #gameAreaDiv_Flag #gameButtonsDiv_Flag #finishTheGameButton_Flag{
+    display: none;
+}
+
+/** end game screen : **/
+
+#mainSectionDiv #gameAreaDiv_Flag #resultText_Flag{
+    display: none;
+    font-size: 1.5vw;
+    padding: 2vw;
+}
+
+#mainSectionDiv #gameAreaDiv_Flag #restartButton_Flag{
+    display: none;
+    cursor: pointer;
+    font-family: "Eight Bit Dragon", monospace;
+    font-size: 1.5vw;
+    margin-top: 1vw;
+    margin-bottom: 1.5vw;
+    padding: 0.5vw;
+    border-color: #6ff17b;
+    border-radius: 0.5vw;
+    color: white;
+    background-color: #3fae47;
+    transition: color 0.6s ease, box-shadow 0.4s ease;
+    box-shadow: 0 12px 30px 0 lightgreen;
+    animation: buttonBlinking 1.5s linear infinite;
+}
+
+#mainSectionDiv #gameAreaDiv_Flag #restartButton_Flag:hover{
+    animation: none;
+    background-color: white;
+    color: #27282c;
+    box-shadow: 0 12px 30px 0 rgba(0, 255, 57, 0.71),0 17px 50px 0 rgba(0, 255, 57, 0.71);
+}
+
+@keyframes buttonBlinking {
+    50%{background-color: darkgreen}
+}

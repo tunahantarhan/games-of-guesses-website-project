@@ -1,0 +1,69 @@
+body{
+    background-image: linear-gradient(to right, rgb(23, 19, 20), rgb(46, 45, 45));
+    background-color: rgb(46, 45, 45);
+    color: white;
+    margin: 0.1vw;
+    font-family: Optima;
+    transition: color 0.8s ease;
+}
+
+#headerSectionDiv{
+    background-color: #4d676a;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    color: black;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+}
+
+#headerSectionDiv #siteIcon{
+    display: inline-block;
+    margin-left: 1vw;
+    width: 45px;
+    height: 45px;
+}
+
+#headerSectionDiv #siteNameHeadline {
+    cursor: pointer;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2.5vw;
+    font-family: "Eight Bit Dragon", sans-serif;
+}
+
+#headerSectionDiv #modeSwitchImages{
+    display: inline-block;
+    cursor: pointer;
+    margin-right: 1vw;
+}
+
+footer{
+    background-color: #1d2828;
+    color: #ccc9c9;
+    padding: 0.5vw;;
+    padding-top: 0.3vw;
+    margin-top: 7vw;
+}
+#footerRedirectionContainer{
+    display: flex;
+}
+
+#footerRedirectionContainer #footerGamesOfGuesses{
+    display: inline-block;
+}
+
+#footerRedirectionContainer #footerFeelingLucky{
+    display: inline-block;
+    margin-left: 2.5vw;
+}
+
+a:link{
+    color: #ccc9c9;
+}
+
+a:visited {
+    color: #ccc9c9;
+}

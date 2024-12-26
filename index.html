@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home | Games of Guess!</title>
+    <link rel="stylesheet" type="text/css" href="style/global.css">
+    <link rel="stylesheet" type="text/css" href="style/mainPage.css">
+    <link href="https://fonts.cdnfonts.com/css/eight-bit-dragon" rel="stylesheet">
+</head>
+
+<body>
+<div id="containerDiv">
+    <div id="headerSectionDiv">
+        <img id="siteIcon" src="assets/iron-throne-vector.png" alt="iron-throne-vector-website-icon">
+
+        <p id="siteNameHeadline" onclick="goToMainPage()"><b>Games of Guess!</b></p>
+
+        <div id="modeSwitchImages">
+            <img id="darkModeImage" src="assets/moon-icon.png"
+                 onclick="darkMode()" width="40" height="40" alt="dark-mode-icon">
+            <img id="lightModeImage" src="assets/sun-icon.png"
+                 onclick="lightMode()" width="46" height="46" alt="light-mode-icon">
+        </div>
+    </div>
+
+    <div id="mainSectionDiv">
+        <p id="introductionText_Flag"><span id="greetingText"></span>Welcome to:</p>
+        <p id="siteNameMainSection"><b>Games of Guess!</b></p>   <!-- removed <span>, made it a stand-alone <p> --->
+        <p id="underText"><i>A website to cure your boredom!</i></p>
+
+        <div id="mainPageButtonsDiv">
+            <button id="flagGuess" onclick="goToFlagGame() ">Guess Country <br>by FLAG<br></button>
+            <button id="emojiGuess" onclick="goToEmojiGame()">Guess Country <br>by EMOJIS<br></button>
+            <button id="feelingLucky" onclick="goToLuckyPage()">I'm Feeling <br>Lucky...</button>
+        </div>
+    </div>
+
+    <footer>
+        <div id="footerSiteInfo">
+            <p style="font-size: 1vw">© Tunahan Tarhan, 2023</p>
+        </div>
+        <hr>
+        <div id="footerRedirectionContainer">
+            <div id="footerGamesOfGuesses">
+                <a href="index.html" target="_blank">Home | Games of Guesses!</a><br>
+                <a href="flagGamePage.html" target="_blank">Guess Country by Flag!</a><br>
+                <a href="emojiGamePage.html" target="_blank">Guess Country by Emoji!</a>
+            </div>
+            <div id="footerFeelingLucky">
+                <a href="feelingLuckyPage.html" target="_blank">Home | Feeling Lucky!</a><br>
+                <a href="albumPicker.html" target="_blank">Album Picker</a><br>
+                <a href="rabbitHole.html" target="_blank">Rabbit Hole</a>
+            </div>
+        </div>
+    </footer>
+</div>
+</body>
+
+<script src="script/global.js"></script>
+<script src="script/mainPage.js"></script>
+
+</html>

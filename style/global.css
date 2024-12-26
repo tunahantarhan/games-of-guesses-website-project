@@ -1,0 +1,71 @@
+body{
+    background-image: linear-gradient(to right, rgb(13, 20, 26), rgb(33, 50, 63));
+    background-color: rgb(33,50,63);
+    color: white;
+    margin: 0.1vw;
+    font-family: Optima;
+    transition: color 0.8s ease;
+    /*makes a smooth "transition" on color changes of body. ("background-image" cant have transition. It's not animatable.*/
+}
+
+#headerSectionDiv{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: #3fae47;
+    color: black;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+}
+
+#headerSectionDiv #siteIcon{
+    display: inline-block;
+    margin-left: 1vw;
+    width: 45px;
+    height: 45px;
+}
+
+#headerSectionDiv #siteNameHeadline {
+    cursor: pointer;
+    position: absolute;
+    left: 50%;                       /* goes to right by half of width horizontally */
+    transform: translateX(-50%);     /* transform --> makes transformations on an element */
+    font-size: 2.5vw;                /* translateX(-50%) --> moves an element horizontally halfway back in horizontal aspect (-50%)  */
+    font-family: "Eight Bit Dragon", sans-serif;
+}
+
+#headerSectionDiv #modeSwitchImages{
+    display: inline-block;
+    cursor: pointer;
+    margin-right: 1vw;
+}
+
+footer{
+    background-color: #0d250d;
+    color: #ccc9c9;
+    padding: 0.5vw;;
+    padding-top: 0.3vw;
+    margin-top: 7vw;
+}
+
+#footerRedirectionContainer{
+    display: flex;
+}
+
+#footerRedirectionContainer #footerGamesOfGuesses{
+    display: inline-block;
+}
+
+#footerRedirectionContainer #footerFeelingLucky{
+    display: inline-block;
+    margin-left: 2.5vw;
+}
+
+a:link{
+    color: #ccc9c9;
+}
+
+a:visited {
+    color: #ccc9c9;
+}

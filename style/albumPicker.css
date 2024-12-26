@@ -1,0 +1,104 @@
+#mainSectionDiv{
+    text-align: center;
+    font-size: 1.5vw;
+    margin: 3.5vw;
+    margin-top: 6.5vw;
+}
+
+#mainSectionDiv #toolName_AlbumPicker{
+    font-family: "Eight Bit Dragon", monospace;
+    color: #c5ac08;
+    font-size: 3.5vw;
+}
+
+#mainSectionDiv #languagePickButtons{
+    display: inline-block;
+    text-align: left;
+    margin-right: 2vw;
+}
+#mainSectionDiv #languagePickButtons #selectedLanguage{
+    font-size: 1vw;
+}
+
+#mainSectionDiv #genreAndMoodSelectionArea{
+    display: inline-block;
+    text-align: left;
+}
+
+#mainSectionDiv #genreAndMoodSelectionArea #genreSelectionArea{
+    display: inline-block;
+    margin-right: 2vw;
+}
+#mainSectionDiv #genreAndMoodSelectionArea #genreSelectionArea #selectedGenre{
+    font-size: 1vw;
+}
+
+#mainSectionDiv #genreAndMoodSelectionArea #moodSelectionArea{
+    display: inline-block;
+}
+#mainSectionDiv #genreAndMoodSelectionArea #moodSelectionArea #selectedMood{
+    font-size: 1vw;
+}
+
+#mainSectionDiv #giveAlbumButton{
+    margin-top: 2.5vw;
+}
+#mainSectionDiv button{
+    cursor: pointer;
+    font-family: "Eight Bit Dragon", monospace;
+    font-size: 1.5vw;
+    padding: 1vw;
+    border-color: #c5ac08;
+    border-radius: 1vw;
+    color: white;
+    background-color: #c5ac08;
+    transition: color 0.6s ease, box-shadow 0.4s ease;
+    box-shadow: 0 12px 30px 0 #97765c;
+    animation: buttonBlinking 3s linear infinite;
+}
+#mainSectionDiv  button:hover{
+    animation: none;
+    background-color: white;
+    color: #27282c;
+    box-shadow: 0 6px 20px 0 rgb(255, 190, 0),0 8px 30px 0 rgb(255, 190, 0);
+}
+
+/* ---------Album Screen--------- */
+#mainSectionDiv #givenAlbumArea{
+    display: none;
+    margin-top: -1vw;
+}
+
+#mainSectionDiv #givenAlbumArea #albumName{
+    font-size: 2vw;
+}
+
+#mainSectionDiv #givenAlbumArea #albumCover{
+    margin-top: -1vw;
+    height: 17vw;
+    width: 17vw;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
+    box-shadow: none;
+}
+
+#mainSectionDiv #givenAlbumArea #spotifyEmbedFrame{
+    margin-top: 1vw;
+}
+
+#mainSectionDiv #givenAlbumArea #albumRedirectionLinkImages{
+    display: flex;
+    width: 8vw;
+    height: 4.5vw;
+    margin-top: 1vw;
+}
+
+#mainSectionDiv #givenAlbumArea button{
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+}
+
+@keyframes buttonBlinking {
+    50%{background-color: #645805
+    }
+}

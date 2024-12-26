@@ -1,0 +1,154 @@
+#headerSectionDiv{
+    background-color: #3f51ae;
+}
+
+footer{
+    background-color: #11152a;
+}
+
+/* ----------------------- */
+
+button{
+    cursor: pointer;
+}
+
+#mainSectionDiv{
+    margin-top: 10vw;
+    margin-bottom: 10vw;
+    text-align: center;
+}
+
+#mainSectionDiv #gameName_Emoji{
+    font-size: 4vw;
+    font-family: "Eight Bit Dragon", monospace;
+}
+
+#mainSectionDiv #introductionText_Emoji{
+    font-size: 1.5vw;
+}
+
+#mainSectionDiv #goodLuckText_Emoji{
+    font-size: 1vw;
+}
+
+#mainSectionDiv #startGameButton_Emoji{
+    cursor: pointer;
+    font-family: "Eight Bit Dragon", monospace;
+    font-size: 2vw;
+    margin-top: 4vw;
+    padding: 1vw;
+    border-color: #3f51ae;
+    border-radius: 1vw;
+    color: white;
+    background-color: #3f51ae;
+    transition: color 0.6s ease, box-shadow 0.4s ease;
+    box-shadow: 0 12px 30px 0 royalblue;
+    animation: buttonBlinking 1.5s linear infinite;
+}
+
+#mainSectionDiv #startGameButton_Emoji:hover{
+    animation: none;
+    background-color: white;
+    color: #27282c;
+    box-shadow: 0 12px 30px 0 rgba(52, 97, 148, 0.71),0 17px 50px 0 rgba(4, 15, 28, 0.71);
+}
+
+#mainSectionDiv #gameAreaDiv_Emoji{
+    display: none;
+    border-radius: 5%;
+    width: 50%;
+    color: white;
+    background-color: #313a6b;
+    margin: -2.5vw 25% -2.5vw 25%;
+}
+
+#mainSectionDiv #gameAreaDiv_Emoji #questionNumberAndTimeBar_Emoji{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.7vw;
+    font-family: "Eight Bit Dragon", monospace;
+}
+
+#mainSectionDiv #gameAreaDiv_Emoji #questionNumberAndTimeBar_Emoji #questionNumber_Emoji{
+    margin-left: 2vw;
+}
+
+#mainSectionDiv #gameAreaDiv_Emoji #questionNumberAndTimeBar_Emoji #gameTime_Emoji{
+    margin-right: 2vw;
+}
+
+#mainSectionDiv #gameAreaDiv_Emoji #emojis{
+    display: inline-block;
+    background-color: #3f51ae;
+    font-size: 5vw;
+    margin-bottom: 1vw;
+}
+
+/* ------------------- */
+
+#mainSectionDiv #gameAreaDiv_Emoji #buttonsArea_Emoji{
+    text-align: center;
+    margin-top: 2vw;
+    margin-bottom: 1.5vw;
+}
+#gameAreaDiv_Emoji #buttonsArea_Emoji button{
+    font-size: 1.5vw;
+    width: 10vw;
+    margin-bottom: 1vw;
+    font-family: "Eight Bit Dragon", monospace;
+    padding: 1vw;
+    border-color: #3f51ae;
+    border-radius: 1vw;
+    color: white;
+    background-color: #4d62d1;
+    box-shadow: 0 12px 30px 0 royalblue;
+    transition: color 0.3s ease, box-shadow 0.2s ease;
+}
+#gameAreaDiv_Emoji #buttonsArea_Emoji button:hover{
+    animation: none;
+    background-color: white;
+    color: #27282c;
+    box-shadow: 0 12px 30px 0 rgba(52, 97, 148, 0.71),0 17px 50px 0 rgba(4, 21, 35, 0.71);
+}
+
+/* ------------------- */
+
+#resultArea_Emoji{
+    display: none;
+}
+#resultArea_Emoji p{
+    font-size: 2vw;
+}
+#resultArea_Emoji #resultText_Emoji{
+    display: inline-block;
+    font-size: 3vw;
+    font-family: "Eight Bit Dragon", monospace;
+}
+#resultArea_Emoji #restartButton_Emoji{
+    display: inline-block;
+    cursor: pointer;
+    font-family: "Eight Bit Dragon", monospace;
+    font-size: 2vw;
+    margin-top: 4vw;
+    padding: 1vw;
+    border-color: #3f51ae;
+    border-radius: 1vw;
+    color: white;
+    background-color: #3f51ae;
+    transition: color 0.6s ease, box-shadow 0.4s ease;
+    box-shadow: 0 12px 30px 0 royalblue;
+    animation: buttonBlinking 1.5s linear infinite;
+}
+
+#resultArea_Emoji #restartButton_Emoji:hover{
+    animation: none;
+    background-color: white;
+    color: #27282c;
+    box-shadow: 0 12px 30px 0 rgba(52, 97, 148, 0.71),0 17px 50px 0 rgba(4, 15, 28, 0.71);
+}
+
+@keyframes buttonBlinking {
+    50%{background-color: #1f1f5f
+    }
+}

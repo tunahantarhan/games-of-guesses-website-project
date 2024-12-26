@@ -1,0 +1,73 @@
+body{
+    margin: 0;
+    background: url("https://media1.tenor.com/m/rbhak--xAzwAAAAC/follow-the-white-rabbit.gif") no-repeat center center fixed;
+    background-size: cover;
+    backdrop-filter: blur(1vw);
+
+}
+
+#contentSectionDiv{
+    color: white;
+    opacity: 70%;
+
+    display: inline-block;
+
+    padding: 0;
+    margin: 15vw;
+    font-size: 2vw;
+    text-align: left;
+}
+
+#contentSectionDiv #errorCode{
+    background-color: #111717;
+
+    padding: 0.8vw;
+    margin-left: 1.5vw;
+
+    text-align: left;
+    display: inline-block;
+    font-size: 5vw;
+    font-family: "Courier New";
+
+}
+
+#contentSectionDiv p{
+    background-color: #111717;
+
+    padding: 1vw;
+    margin-left: 1.5vw;
+    margin-top: 0;
+
+    text-align: left;
+    display: inline-block;
+    font-size: 1.5vw;
+    font-family: "Courier New";
+}
+
+#contentSectionDiv button{
+    cursor: pointer;
+    font-family: "Eight Bit Dragon", monospace;
+    font-size: 1.5vw;
+
+    padding: 1vw;
+    margin-left: 1.7vw;
+
+    border-color: #056602;
+    border-radius: 1vw;
+    color: white;
+    background-color: #1e2828;
+    transition: color 0.6s ease, box-shadow 0.4s ease;
+    box-shadow: 0 12px 30px 0 #069901;
+    animation: buttonBlinking 1.5s linear infinite;
+}
+
+#contentSectionDiv button:hover{
+    animation: none;
+    background-color: #023803;
+    box-shadow: 0 12px 30px 0 rgb(107, 155, 95),0 17px 50px 0 rgb(107, 155, 95);
+}
+
+@keyframes buttonBlinking {
+    50%{background-color: #030404
+    }
+}
